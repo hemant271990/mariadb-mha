@@ -1,0 +1,2 @@
+user => root, password => gsoc2015, ip => 10.0.3.90, port => 3306
+user => root, password => gsoc2015, ip => 10.0.3.101, port => 3306

@@ -1,0 +1,12 @@
+#!/usr/bin/perl -w
+
+use lib '../lib';
+use MHA::MasterMonitor;
+
+$num_args = $#ARGV + 1;
+if ($num_args != 4) {
+    print "\nUsage: master_monitor username password ip port\n";
+    exit;
+}
+
+MHA::MasterMonitor::main( @ARGV );

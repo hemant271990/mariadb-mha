@@ -1,0 +1,6 @@
+#!/usr/bin/perl -w
+
+use lib '../lib';
+use MHA::SlaveManager;
+
+MHA::SlaveManager::main( );
