@@ -5,17 +5,16 @@ package MHA::MasterMonitor;
 use MHA::CheckHealth;
 
 sub main {
-	my ($user, $password, $ip, $port) = @_;
+    my ($user, $password, $ip, $port) = @_;
 
-	$master_health = new MHA::CheckHealth(
+    $master_health = new MHA::CheckHealth(
       user           => $user,
       password       => $password,
       ip             => $ip,
       port           => $port,
     );
-	
-	#print ($user, $password);
-	$master_health->test_until_disconnects();
+    
+    $master_health->test_until_disconnects();
 }
 
 1;
